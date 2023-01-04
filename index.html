@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:regular,600|Cormorant+Upright:regular,600,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header" id="header">
+            <div class="header__container container">
+                <div class="hashtags">
+                    <div class="hashtags__item">#Bar</div>
+                    <div class="hashtags__item">#Gericht</div>
+                </div>
+                <div class="header__body">
+                    <a class="header__logo" href="#">Gerícht</a>
+                    <div class="burger" id="burger-btn">
+                        <span>burger</span>
+                    </div>
+                    <nav class="header__menu menu">
+                         <div class="menu__mobile-item">
+                            <a class="menu__link" href="#">Log-in</a>
+                            <a class="menu__link" href="#">Registration</a>
+                            <a class="menu__link" href="#">Book Table</a>
+                        </div>
+                        <a class="menu__link" href="#">Home</a>
+                        <a class="menu__link" href="#">Pages</a>
+                        <a class="menu__link" href="#" id="scroll-btn" data-element="#contact">Contact Us</a>
+                        <a class="menu__link" href="#">Blog</a>
+                        <a class="menu__link" href="#">Landing</a>
+                        <!-- Mobile -->
+                    </nav>
+                    <div class="header__right">
+                        <div class="header__login">
+                            <a class="header__link" href="#">Log in</a>
+                            <a class="header__link" href="#">Registration</a>
+                        </div>
+                        <a class="header__link" href="">Book Table</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="page">
+
+            <section class="intro" id="intro">
+                <div class="intro__container container">
+                    <div class="intro__body">
+                        <div class="intro__slider slider-intro">
+                            <h1 class="intro__title">On the Rocks</h1>
+                            <div class="slider-intro__item active">
+                                <img class="slider-intro__img" src="images/intro-slider/intro-img-center.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="intro__scroll-bottom" id="scroll-btn" data-element = "#reservation">
+                            <div class="scroll-btn">scroll</div>
+                        </div>
+                    </div>
+                    <div class="dots-slider">
+                        <div class="dots-slider__dot active">01</div>
+                        <div class="dots-slider__dot">02</div>
+                        <div class="dots-slider__dot">03</div>
+                        <div class="dots-slider__dot">04</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="reservation" id="reservation">
+                <div class="reservation__container container">
+                    <img class="reservation__decor section-decor" src="images/logo-decor.svg" alt="decor-bg"></img>
+                    <div class="reservation__wrapper">
+                        <div class="reservation__header section-header">
+                            <div class="section-header__overhead">Reservations</div>
+                            <h2 class="section-header__title">Book A Table</h2>
+                        </div>
+                        <form class="reservation__form" accept="/">
+                            <div class="reservation__group">
+                                <select class="reservation__input reservation__input--arrow" name="reservation-person-value">
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 Person</option>
+                                    <option value="3">3 Person</option>
+                                    <option value="4">4 Person</option>
+                                    <option value="5">5 Person</option>
+                                </select>
+                                <input class="reservation__input" type="date" name="reservation-date" value="2021-05-21">
+                                <input class="reservation__input" type="time" name="reservation-time">
+                            </div>
+                            <button type="submit" class="reservation__btn btn">Book Now</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about">
+                <div class="about__container container">
+                    <img class="about__decor section-decor" src="images/logo-decor.svg" alt="decor-bg"></img>
+                    <div class="about__body">
+                        <div class="about__left">
+                            <img class="about__img" src="images/about/fabio-alves.jpg" alt="fabio-alves">
+                        </div>
+                        <div class="about__right">
+                            <img class="about__right-img" src="images/about/adam-jaime.jpg" alt="adam-jaime">
+                            <div class="reservation__header section-header">
+                                <div class="section-header__overhead">About Us</div>
+                                <h2 class="section-header__title section-header__title_left">Food, Drinks, Entertainment In One</h2>
+                            </div>
+                            <p class="about__text">Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.</p>
+                            <a class="about__btn btn" href="#">Know More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="poison">
+                <div class="poison__container container">
+
+                    <div class="poison__header section-header">
+                        <div class="section-header__overhead">Wide Range to choose from</div>
+                        <h2 class="section-header__title">What’s Your Poison?</h2>
+                    </div>
+
+                    <div class="poison__cards">
+                        <div class="poison__column">
+                            <div class="poison__item">
+                                <img class="poison__img" src="images/poison/beer.jpg" alt="beer">
+                                <div class="poison__info">
+                                    <p class="poison__text">Beer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="poison__column">
+                            <div class="poison__item">
+                                <img class="poison__img" src="images/poison/wine.jpg" alt="wine">
+                                <div class="poison__info">
+                                    <p class="poison__text">Wine</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="poison__column">
+                            <div class="poison__item">
+                                <img class="poison__img" src="images/poison/cocktail.jpg" alt="cocktail">
+                                <div class="poison__info">
+                                    <p class="poison__text">Cocktail</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="work-hours">
+                <div class="work-hours__container container">
+                    <div class="work-hours__body">
+                        <h2 class="work-hours__title">Happy Hours</h2>
+                        <div class="work-hours__subtitle">Monday - Friday<span> &#40; 4:00 pm - 7:00 pm )</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="special-menu">
+                <div class="special-menu__container container">
+                    <img class="special-menu__decor section-decor" src="images/logo-decor.svg" alt="decor-bg"></img>
+
+                    <div class="special-menu__header section-header">
+                        <div class="section-header__overhead">Menu that fits you palatte</div>
+                        <h2 class="section-header__title">Today’s Special</h2>
+                    </div>
+
+                    <div class="special-menu__body">
+                        <div class="special-menu__column">
+                            <div class="special-menu__item">
+                                <div class="special-menu__title">Wine &#38; Beer</div>
+                                <ul class="special-menu__list">
+                                    <li class="special-menu__list-item">
+                                        <div class="special-menu__group">
+                                            <div class="special-menu__name">chapel hill shiraz</div>
+                                            <div class="special-menu__value">$56</div>
+                                        </div>
+                                        <div class="special-menu__descriptions">AU | Bottle</div>
+                                    </li>
+                                    <li class="special-menu__list-item">
+                                        <div class="special-menu__group">
+                                            <div class="special-menu__name">catena malbec</div>
+                                            <div class="special-menu__value">$59</div>
+                                        </div>
+                                        <div class="special-menu__descriptions">AR | Bottle</div>
+                                    </li>
+                                    <li class="special-menu__list-item">
+                                        <div class="special-menu__group">
+                                            <div class="special-menu__name">la vieille rosé</div>
+                                            <div class="special-menu__value">$44</div>
+                                        </div>
+                                        <div class="special-menu__descriptions">FR | 750 ml</div>
+                                    </li>
+                                    <li class="special-menu__list-item">
+                                        <div class="special-menu__group">
+                                            <div class="special-menu__name">rhino pale ale</div>
+                                            <div class="special-menu__value">$31</div>
+                                        </div>
+                                        <div class="special-menu__descriptions">CA | 750 ml</div>
+                                    </li>
+                                    <li class="special-menu__list-item">
+                                        <div class="special-menu__group">
+                                            <div class="special-menu__name">irish guinness</div>
+                                            <div class="special-menu__value">$26</div>
+                                        </div>
+                                        <div class="special-menu__descriptions">IE | 750 ml</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="special-menu__column absolute">
+                            <img class="special-menu__img" src="images/special-menu/shaker.jpg" alt="shaker">
+                        </div>
+                        <div class="special-menu__column">
+                            <div class="special-menu__item">
+                                <div class="special-menu__title">Cocktails</div>
+                                <ul class="special-menu__list">
+                                    <li class="special-menu__list-item">
+                                        <div class="special-menu__group">
+                                            <div class="special-menu__name">aperol spritz</div>
+                                            <div class="special-menu__value">$20</div>
+                                        </div>
+                                        <div class="special-menu__descriptions">Aperol | Villa Marchesi prosecco | soda | 30ml</div>
+                                    </li>
+                                    <li class="special-menu__list-item">
+                                        <div class="special-menu__group">
+                                            <div class="special-menu__name">dark 'n' stormy</div>
+                                            <div class="special-menu__value">$16</div>
+                                        </div>
+                                        <div class="special-menu__descriptions">AR | Bottle</div>
+                                    </li>
+                                    <li class="special-menu__list-item">
+                                        <div class="special-menu__group">
+                                            <div class="special-menu__name">daiquiri</div>
+                                            <div class="special-menu__value">$10</div>
+                                        </div>
+                                        <div class="special-menu__descriptions">Rum | Citrus juice | Sugar</div>
+                                    </li>
+                                    <li class="special-menu__list-item">
+                                        <div class="special-menu__group">
+                                            <div class="special-menu__name">old fashioned</div>
+                                            <div class="special-menu__value">$31</div>
+                                        </div>
+                                        <div class="special-menu__descriptions">Bourbon | Brown sugar | Angostura Bitters</div>
+                                    </li>
+                                    <li class="special-menu__list-item">
+                                        <div class="special-menu__group">
+                                            <div class="special-menu__name">negroni</div>
+                                            <div class="special-menu__value">$26</div>
+                                        </div>
+                                        <div class="special-menu__descriptions">Gin | Sweet Vermouth | Campari | Orange garnish</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="special-menu__btn">
+                        <a class=" btn" href="#">View More</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <div class="contact__container container">
+                    <div class="contact__left">
+                        <div class="contact__header section-header">
+                            <div class="section-header__overhead">Contact</div>
+                            <h2 class="section-header__title section-header__title_left">Find Us</h2>
+                        </div>
+                        <div class="contact__info">
+                            <div class="contact__address">Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 7SG</div>
+                            <div class="contact__text">Opening Hours</div>
+                            <div class="contact__hours">Mon - Fri: 10:00 am - 02:00 am</div>
+                            <div class="contact__hours">Sat - Sun: 10:00 am - 03:00 am</div>
+                        </div>
+                    </div>
+                    <div class="contact__right">
+                        <div class="contact__img">
+                            <img src="images/contact/cocktail.jpg" alt="cocktail">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer" id="footer">
+            <div class="subscribe">
+                <div class="subscribe__container container">
+                    <div class="subscribe__wrapper">
+                        <img class="subscribe__decor section-decor" src="images/logo-decor.svg" alt="decor-bg"></img>
+                        <div class="subscribe__header section-header">
+                            <div class="section-header__overhead">Newsletter</div>
+                            <h2 class="section-header__title">Subscribe to Our Newsletter</h2>
+                            <div class="section-header__subtitle">And never miss latest Updates!</div>
+                        </div>
+                        <form class="subscribe__form" accept="/">
+                            <input class="subsctibe__input" placeholder="Email Address" type="email" name="email">
+                            <div class="subsctibe__btn">
+                                <button class="btn">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="footer__scroll-top" id="scroll-btn"  data-element = "#intro">
+                        <div class="scroll-btn">top</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__wrapper">
+                <div class="footer__container container">
+                    <div class="footer__body">
+                        <div class="footer__column">
+                            <div class="footer__group">
+                                <div class="footer__column-name">Contact Us</div>
+                                <div class="footer__address">9 W 53rd St, New York, NY 10019, USA</div>
+                                <a class="footer__link" href="tel:+1 212-344-1230">+1 212-344-1230</a>
+                                <a class="footer__link" href="tel:+1 212-555-1230">+1 212-555-1230</a>
+                            </div>
+                        </div>
+                        <div class="footer__column">
+                            <h2 class="footer__title">Gerícht</h2>
+                            <div class="footer__subtitle">"The best way to find yourself is to lose yourself in the service of others.”</div>
+                            <ul class="footer__socials socials">
+                                <li class="socials__item">
+                                    <a class="socials__link" href="#">
+                                        <svg viewBox="0 0 25 24">
+                                            <path d="M15.62 5.32003H17.5V2.14003C16.5898 2.04538 15.6752 1.99865 14.76 2.00003C12.04 2.00003 10.18 3.66003 10.18 6.70003V9.32003H7.11V12.88H10.18V22H13.86V12.88H16.92L17.38 9.32003H13.86V7.05003C13.86 6.00003 14.14 5.32003 15.62 5.32003Z"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials__item">
+                                    <a class="socials__link" href="#">
+                                        <svg viewBox="0 0 25 24">
+                                            <path d="M23.4912 3.95021C23.4913 3.77357 23.4446 3.60007 23.3559 3.44735C23.2671 3.29464 23.1395 3.16817 22.9859 3.08084C22.8324 2.9935 22.6585 2.94842 22.4819 2.95017C22.3052 2.95193 22.1322 3.00046 21.9805 3.09083C21.3952 3.43921 20.765 3.70601 20.1075 3.88383C19.1684 3.07806 17.9708 2.63713 16.7335 2.64164C15.376 2.6432 14.0724 3.17223 13.0977 4.11702C12.123 5.06181 11.5537 6.3484 11.5098 7.70512C8.83382 7.27838 6.40847 5.88164 4.69629 3.78126C4.59313 3.65609 4.46138 3.55757 4.31215 3.494C4.16293 3.43043 4.0006 3.40368 3.83887 3.41601C3.67723 3.42932 3.52126 3.4818 3.38446 3.56892C3.24766 3.65603 3.13414 3.77516 3.05371 3.91601C2.64124 4.63582 2.40434 5.44276 2.36226 6.27131C2.32018 7.09986 2.4741 7.92666 2.81152 8.68456L2.80957 8.68651C2.65792 8.77991 2.53276 8.91066 2.44607 9.06625C2.35939 9.22185 2.31407 9.39708 2.31445 9.57519C2.31261 9.72211 2.32143 9.86898 2.34082 10.0146C2.44296 11.2729 3.0006 12.4507 3.90918 13.3271C3.84754 13.4446 3.80992 13.5731 3.79852 13.7052C3.78712 13.8373 3.80216 13.9704 3.84277 14.0967C4.23888 15.3308 5.08127 16.3727 6.20508 17.0185C5.06332 17.46 3.8305 17.614 2.61523 17.4668C2.3903 17.4386 2.16246 17.4876 1.96908 17.6059C1.7757 17.7242 1.62826 17.9047 1.55095 18.1178C1.47363 18.3309 1.47104 18.5639 1.54359 18.7787C1.61614 18.9935 1.75953 19.1772 1.95023 19.2998C4.04032 20.646 6.47391 21.3617 8.96 21.3613C11.7793 21.393 14.53 20.4921 16.7842 18.7988C19.0385 17.1054 20.67 14.7145 21.4248 11.998C21.7779 10.8146 21.9581 9.58648 21.96 8.35157C21.96 8.28614 21.96 8.21876 21.959 8.15138C22.4811 7.58831 22.8856 6.92668 23.1487 6.20527C23.4118 5.48387 23.5282 4.7172 23.4912 3.95021ZM20.1846 7.16212C20.0194 7.35746 19.9358 7.60891 19.9512 7.86427C19.9609 8.02927 19.96 8.19527 19.96 8.35157C19.9579 9.39511 19.805 10.4329 19.5059 11.4326C18.8894 13.744 17.515 15.7817 15.6029 17.2192C13.6909 18.6568 11.3517 19.4111 8.96 19.3613C8.10088 19.3616 7.24472 19.2606 6.40922 19.0606C7.47463 18.7172 8.47081 18.1879 9.3516 17.4971C9.51383 17.3693 9.63255 17.1945 9.69149 16.9967C9.75042 16.7988 9.74668 16.5875 9.68077 16.3918C9.61487 16.1961 9.49003 16.0257 9.32338 15.9038C9.15673 15.7819 8.95645 15.7145 8.75 15.7109C7.91883 15.698 7.12513 15.363 6.53613 14.7764C6.68555 14.7481 6.83399 14.7129 6.98145 14.6709C7.19746 14.6094 7.38649 14.477 7.51811 14.295C7.64973 14.1131 7.71627 13.8921 7.70702 13.6677C7.69778 13.4433 7.61328 13.2285 7.46713 13.058C7.32099 12.8874 7.12171 12.7711 6.90137 12.7275C6.41891 12.6323 5.96492 12.427 5.57468 12.1277C5.18445 11.8284 4.8685 11.4432 4.65137 11.002C4.8321 11.0266 5.01398 11.0419 5.19629 11.0479C5.41287 11.0511 5.62488 10.9854 5.80167 10.8603C5.97845 10.7351 6.11084 10.5569 6.17969 10.3516C6.24567 10.1443 6.24227 9.92123 6.17002 9.7161C6.09776 9.51096 5.96059 9.33499 5.7793 9.21485C5.33945 8.92182 4.97914 8.52427 4.73066 8.0578C4.48217 7.59134 4.35326 7.07052 4.35547 6.54201C4.35547 6.47561 4.35742 6.4092 4.36133 6.34377C6.60259 8.43402 9.50965 9.66621 12.5703 9.82326C12.7248 9.82934 12.8787 9.80024 13.0203 9.73816C13.1619 9.67607 13.2875 9.58262 13.3877 9.46486C13.4869 9.34596 13.5571 9.20566 13.5929 9.05501C13.6286 8.90437 13.6289 8.74748 13.5937 8.5967C13.5365 8.35806 13.5074 8.11357 13.5068 7.86818C13.5077 7.01271 13.848 6.19254 14.4529 5.58764C15.0578 4.98274 15.8779 4.64251 16.7334 4.64161C17.1735 4.64043 17.6091 4.7305 18.0127 4.90615C18.4163 5.0818 18.779 5.3392 19.0781 5.66212C19.1935 5.7862 19.3386 5.87871 19.4998 5.93085C19.661 5.98299 19.8328 5.99303 19.999 5.96001C20.4098 5.88006 20.8147 5.7724 21.2109 5.63775C20.9406 6.19072 20.5953 6.70369 20.1846 7.16212Z"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials__item">
+                                    <a class="socials__link" href="#">
+                                        <svg viewBox="0 0 25 24">
+                                            <path d="M17.84 5.46C17.6027 5.46 17.3707 5.53038 17.1733 5.66224C16.976 5.79409 16.8222 5.98151 16.7313 6.20078C16.6405 6.42005 16.6168 6.66133 16.6631 6.89411C16.7094 7.12689 16.8236 7.34071 16.9915 7.50853C17.1593 7.67635 17.3731 7.79064 17.6059 7.83694C17.8387 7.88324 18.0799 7.85948 18.2992 7.76866C18.5185 7.67783 18.7059 7.52402 18.8378 7.32668C18.9696 7.12935 19.04 6.89734 19.04 6.66C19.04 6.34174 18.9136 6.03652 18.6885 5.81147C18.4635 5.58643 18.1583 5.46 17.84 5.46ZM22.44 7.88C22.4206 7.0503 22.2652 6.2294 21.98 5.45C21.7257 4.78313 21.33 4.17928 20.82 3.68C20.3248 3.16743 19.7196 2.77418 19.05 2.53C18.2727 2.23616 17.4508 2.07721 16.62 2.06C15.56 2 15.22 2 12.5 2C9.78 2 9.44 2 8.38 2.06C7.54915 2.07721 6.72734 2.23616 5.95 2.53C5.28168 2.77665 4.67693 3.16956 4.18 3.68C3.66743 4.17518 3.27418 4.78044 3.03 5.45C2.73616 6.22734 2.57721 7.04915 2.56 7.88C2.5 8.94 2.5 9.28 2.5 12C2.5 14.72 2.5 15.06 2.56 16.12C2.57721 16.9508 2.73616 17.7727 3.03 18.55C3.27418 19.2196 3.66743 19.8248 4.18 20.32C4.67693 20.8304 5.28168 21.2234 5.95 21.47C6.72734 21.7638 7.54915 21.9228 8.38 21.94C9.44 22 9.78 22 12.5 22C15.22 22 15.56 22 16.62 21.94C17.4508 21.9228 18.2727 21.7638 19.05 21.47C19.7196 21.2258 20.3248 20.8326 20.82 20.32C21.3322 19.8226 21.7283 19.2182 21.98 18.55C22.2652 17.7706 22.4206 16.9497 22.44 16.12C22.44 15.06 22.5 14.72 22.5 12C22.5 9.28 22.5 8.94 22.44 7.88ZM20.64 16C20.6327 16.6348 20.5178 17.2637 20.3 17.86C20.1403 18.2952 19.8839 18.6884 19.55 19.01C19.2256 19.3405 18.8332 19.5964 18.4 19.76C17.8037 19.9778 17.1748 20.0927 16.54 20.1C15.54 20.15 15.17 20.16 12.54 20.16C9.91 20.16 9.54 20.16 8.54 20.1C7.88089 20.1123 7.22459 20.0109 6.6 19.8C6.18578 19.6281 5.81136 19.3728 5.5 19.05C5.16809 18.7287 4.91484 18.3352 4.76 17.9C4.51586 17.2952 4.38044 16.6519 4.36 16C4.36 15 4.3 14.63 4.3 12C4.3 9.37 4.3 9 4.36 8C4.36448 7.35106 4.48295 6.70795 4.71 6.1C4.88605 5.67791 5.15627 5.30166 5.5 5C5.80381 4.65617 6.17929 4.3831 6.6 4.2C7.20955 3.98004 7.852 3.86508 8.5 3.86C9.5 3.86 9.87 3.8 12.5 3.8C15.13 3.8 15.5 3.8 16.5 3.86C17.1348 3.86728 17.7637 3.98225 18.36 4.2C18.8144 4.36865 19.2223 4.64285 19.55 5C19.8777 5.30718 20.1338 5.68273 20.3 6.1C20.5223 6.70893 20.6373 7.35178 20.64 8C20.69 9 20.7 9.37 20.7 12C20.7 14.63 20.69 15 20.64 16ZM12.5 6.87C11.4858 6.87198 10.495 7.17453 9.65265 7.73942C8.81035 8.30431 8.15438 9.1062 7.76763 10.0438C7.38089 10.9813 7.28072 12.0125 7.47979 13.0069C7.67886 14.0014 8.16824 14.9145 8.88608 15.631C9.60392 16.3474 10.518 16.835 11.5129 17.0321C12.5077 17.2293 13.5387 17.1271 14.4755 16.7385C15.4123 16.35 16.2129 15.6924 16.7761 14.849C17.3394 14.0056 17.64 13.0142 17.64 12C17.6413 11.3251 17.5092 10.6566 17.2512 10.033C16.9933 9.40931 16.6146 8.84281 16.1369 8.36605C15.6592 7.88929 15.0919 7.51168 14.4678 7.25493C13.8436 6.99818 13.1749 6.86736 12.5 6.87ZM12.5 15.33C11.8414 15.33 11.1976 15.1347 10.65 14.7688C10.1023 14.4029 9.67552 13.8828 9.42348 13.2743C9.17144 12.6659 9.1055 11.9963 9.23398 11.3503C9.36247 10.7044 9.67963 10.111 10.1453 9.64533C10.611 9.17963 11.2044 8.86247 11.8503 8.73398C12.4963 8.6055 13.1659 8.67144 13.7743 8.92348C14.3828 9.17552 14.9029 9.60234 15.2688 10.15C15.6347 10.6976 15.83 11.3414 15.83 12C15.83 12.4373 15.7439 12.8703 15.5765 13.2743C15.4092 13.6784 15.1639 14.0454 14.8547 14.3547C14.5454 14.6639 14.1784 14.9092 13.7743 15.0765C13.3703 15.2439 12.9373 15.33 12.5 15.33Z"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__column">
+                            <div class="footer__group">
+                                <div class="footer__column-name">Working Hours</div>
+                                <p class="footer__text">
+                                    Monday-Friday:
+                                    <br>
+                                    08:00 am -12:00 am
+                                </p>
+                                <p class="footer__text">
+                                    Saturday-Sunday:
+                                    <br>
+                                    07:00am -11:00 pm
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">2021 Gerícht. All Rights reserved.</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
