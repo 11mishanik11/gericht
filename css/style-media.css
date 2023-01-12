@@ -1,0 +1,453 @@
+/* ------------------------------------------------------------------------------------------------------------------------- */
+@media (max-width: 1650px) {
+
+    /* Section Header -------------------------------------------------------------*/
+    .section-decor {
+        width: 100px;
+    }
+
+    /* reservation ----------------------------------------------------------------*/
+    .reservation__decor {
+        top: -50px;
+        right: 15px;
+    }
+
+    /* About ----------------------------------------------------------------------*/
+    .about__decor {
+        left: 15px;
+        top: -50px;
+    }
+
+    /* Subscribe ------------------------------------------------------------------*/
+    .subscribe__decor {
+        top: -50px;
+        right: 15px;
+    }
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+@media (max-width: 1330px) {
+
+    /* Special Menu ---------------------------------------------------------------*/
+    .special-menu__body {
+        position: relative;
+        justify-content: space-between;
+    }
+    .special-menu__column.absolute {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: -1;
+        transform: translateX(-50%);
+
+        filter: brightness(0.4);
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+@media (max-width: 1200px) {
+
+    /* Header ---------------------------------------------------------------------*/
+    .header__right {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__login {
+        transform: none;
+    }
+    .header__login::after {
+        display: none;
+    }
+
+    /* Intro ----------------------------------------------------------------------*/
+    .intro__title {
+        font-size: 130px;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+@media (max-width: 992px) {
+
+    /* Body -----------------------------------------------------------------------*/
+    body.hidden {
+        overflow: hidden;
+    }
+
+    /* Section Header -------------------------------------------------------------*/
+    .section-header__title_left::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Header ---------------------------------------------------------------------*/
+    .header__body {
+        justify-content: space-between;
+    }
+    .active .header__logo {
+        position: relative;
+        z-index: 1;
+        color: #0C0B08;
+    }
+    .active .header__right {
+        position: relative;
+        z-index: 1;
+
+        color: #0C0B08;
+    }
+
+    /* Menu -----------------------------------------------------------------------*/
+    .menu {
+        display: flex;
+        width: 100%;
+        min-height: 110vh;
+        overflow-y: scroll;
+
+        position: absolute;
+        top: 0px;
+        left: -100%;
+
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 100px 30px 25px;
+
+        font-size: 25px;
+        color: #0C0B08;
+
+        background-color: #fff;
+        transition: left ease-out .2s;
+
+    }
+    .active .menu {
+        left: 0;
+    }
+
+    /* Burger ---------------------------------------------------------------------*/
+    .burger {
+        display: block;
+    }
+    .active .burger span,
+    .active .burger::before,
+    .active .burger::after {
+        background-color: #0C0B08;
+    }
+
+    /* reservation ----------------------------------------------------------------*/
+    .reservation {
+        padding: 120px 0;
+    }
+
+    /* About ----------------------------------------------------------------------*/
+    .about__body {
+        align-items: center;
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 70px 0;
+    }
+    .about__left {
+        display: none;
+    }
+    .about__right {
+        flex-basis: 100%;
+    }
+    .about__right {
+        max-width: 100%;
+    }
+    .about__text {
+        margin: 0 auto 32px;
+    }
+
+    /* Poison ---------------------------------------------------------------------*/
+    .poison {
+        padding: 70px 0;
+    }
+
+    /* Work House -----------------------------------------------------------------*/
+    .work-hours {
+        padding: 250px 0;
+    }
+
+    /* Special Menu ---------------------------------------------------------------*/
+    .special-menu {
+        padding: 70px 0;
+    }
+
+    /* Contact --------------------------------------------------------------------*/
+    .contact {
+        padding: 70px 0;
+    }
+    .contact__container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact__left {
+        padding: 0px 0px 40px 0px;
+    }
+    .contact__img::before {
+        top: -15px;
+        right: -15px;
+    }
+    .contact__img::after {
+        bottom: -15px;
+        left: -15px;
+    }
+
+    /* Footer ---------------------------------------------------------------------*/
+    .footer {
+        margin: 290px 0px 0px 0px;
+        padding: 0px 0px 50px 0px;
+    }
+    .footer__body {
+        flex-direction: column;
+        margin: 0px 0px 50px 0px;
+    }
+    .footer__column {
+        flex-basis: 100%;
+    }
+    .footer__column:not(:last-child) {
+        margin-bottom: 40px;
+    }
+    .footer__column-name {
+        margin: 0px 0px 10px 0px;
+    }
+    .footer__group {
+        padding: 0;
+    }
+
+
+    .footer__title {
+        margin: 0px 0px 10px 0px;
+    }
+
+    /* Subscribe ------------------------------------------------------------------*/
+    .subscribe {
+        margin-bottom: 32px;
+    }
+    .subsctibe__input {
+        margin: 0px 0px 30px 0px;
+    }
+    .subsctibe__btn {
+        display: block;
+    }
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+@media (max-width: 900px) {
+
+    /* Special Menu ---------------------------------------------------------------*/
+    .special-menu__body {
+        margin: -16px 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .special-menu__column {
+        flex-basis: 70%;
+        padding: 16px 0;
+    }
+    .special-menu__column.absolute {
+        display: none;
+    }
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+
+    /* Section Header -------------------------------------------------------------*/
+    .section-header {
+        margin: 0px 0px 20px 0px;
+    }
+
+    /* Intro ----------------------------------------------------------------------*/
+    .intro__title {
+        font-size: 110px;
+    }
+
+    /* reservation ----------------------------------------------------------------*/
+    .reservation {
+        padding: 70px 0;
+    }
+    .reservation__group {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin: 0px 0px 40px 0px;
+    }
+    .reservation__input {
+        flex-basis: 100%;
+        margin: 0;
+    }
+    /* Poison ---------------------------------------------------------------------*/
+    .poison__cards {
+        margin: -15px;
+    }
+    .poison__column {
+        padding: 15px;
+        flex-basis: 50%;
+    }
+
+    /* Work House -----------------------------------------------------------------*/
+    .work-hours {
+        padding: 200px 0;
+    }
+
+    /* Special Menu  --------------------------------------------------------------*/
+    .special-menu__btn {
+        padding: 32px 0px 0px 0px;
+    }
+    .footer__body {
+    }
+    /* Footer ---------------------------------------------------------------------*/
+
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+@media (max-width: 700px) {
+
+    /* Intro ----------------------------------------------------------------------*/
+    .intro__title {
+        font-size: 95px;
+    }
+
+    /* Intro ----------------------------------------------------------------------*/
+    .slider-intro__dots {
+        bottom: calc(10px + 66px);
+        right: 5px;
+    }
+
+    /* Work House -----------------------------------------------------------------*/
+    .work-hours__title {
+        font-size: 80px;
+    }
+    .work-hours__subtitle {
+        font-size: 22px;
+    }
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+@media (max-width: 575px) {
+
+    /* Section Header -------------------------------------------------------------*/
+    .section-header__title {
+        font-size: 40px;
+    }
+
+    /* Header ---------------------------------------------------------------------*/
+    .header__right {
+        display: none;
+    }
+
+    /* Hashtags -------------------------------------------------------------------*/
+    .hashtags {
+        bottom: 15px;
+        left: 0;
+        transform: none;
+    } 
+
+    /* Menu -----------------------------------------------------------------------*/
+    .menu__mobile-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* reservation ----------------------------------------------------------------*/
+    .reservation {
+        padding: 30px 0;
+    }
+
+    /* About ----------------------------------------------------------------------*/
+    .about__body {
+        padding: 30px 0;
+    }
+
+    /* Poison ---------------------------------------------------------------------*/
+    .poison {
+        padding: 45px 0;
+     }
+     .poison__cards {
+        margin: 0px 0px -15px 0px;
+    }
+    .poison__column {
+        flex-basis: 100%;
+        padding: 0px 0px 15px 0px;
+    }
+    .poison__img {
+        width: 100%;
+    }
+
+    /* Work House -----------------------------------------------------------------*/
+    .work-hours {
+        padding: 120px 0;
+    }
+    .work-hours__title {
+        font-size: 56px;
+    }
+    .work-hours__subtitle {
+        font-size: 19px;
+    }
+
+    /* Special Menu  --------------------------------------------------------------*/
+    .special-menu {
+        padding: 45px 0;
+    }
+    .special-menu__header {
+        padding: 0px 0px 5px 0px;
+    }
+    .special-menu__column {
+        flex-basis: 100%;
+    }
+    .special-menu__item {
+        padding: 0;
+    }
+    .special-menu__title {
+        margin: 0px 0px 30px 0px;
+        font-size: 30px;
+    }
+    .special-menu__list>*:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .special-menu__name {
+        white-space: normal;
+        font-size: 18px;
+    }
+
+    /* Contact --------------------------------------------------------------------*/
+    .contact {
+        padding: 45px 0;
+    }
+    .contact__left {
+        padding: 0;
+    }
+    .contact__img {
+        display: none;
+    }
+
+    /* Footer ---------------------------------------------------------------------*/
+    .footer__body {
+        margin: 0px 0px 30px 0px;
+    }
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+@media (max-width: 460px) {
+
+    /* Special Menu  --------------------------------------------------------------*/
+    .special-menu__value::before {
+        margin: 0px 12px;
+        width: 20px;
+    } 
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+/* Mobile first */
+@media (min-width: 993px) {
+
+    .header__body>* {
+        flex: 0 1 33.333%;
+    }
+}
