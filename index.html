@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.svg">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:regular,600|Cormorant+Upright:regular,600,700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-media.css">
-    <title>Document</title>
+    <title>Gerícht</title>
 </head>
 <body>
     <div class="wrapper">
@@ -55,27 +56,37 @@
                 <div class="intro__container container">
 
                     <div class="intro__body">
-                        <div class="intro__slider slider-intro">
-
+                        <div class="intro__wrapper">
                             <h1 class="intro__title">on the rocks</h1>
-                            <div class="slider-intro__track">
+                            <div class="slider-intro">
                                 <div class="slider-intro__item">
                                     <picture>
                                         <source media="(max-height: 670px) and (orientation: landscape)" srcset="images/intro-slider/intro-img-center-1-big.jpg">
                                         <img class="slider-intro__img" src="images/intro-slider/intro-img-center-1.jpg" alt="">
                                     </picture>
                                 </div>
+                                <div class="slider-intro__item">
+                                    <picture>
+                                        <source media="(max-height: 670px) and (orientation: landscape)" srcset="images/intro-slider/intro-img-center-2-big.jpg">
+                                        <img class="slider-intro__img" src="images/intro-slider/intro-img-center-2.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="slider-intro__item">
+                                    <picture>
+                                        <source media="(max-height: 670px) and (orientation: landscape)" srcset="images/intro-slider/intro-img-center-1-big.jpg">
+                                        <img class="slider-intro__img" src="images/intro-slider/intro-img-center-1.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="slider-intro__item">
+                                    <picture>
+                                        <source media="(max-height: 670px) and (orientation: landscape)" srcset="images/intro-slider/intro-img-center-2-big.jpg">
+                                        <img class="slider-intro__img" src="images/intro-slider/intro-img-center-2.jpg" alt="">
+                                    </picture>
+                                </div>
                             </div>
 
                             <div class="intro__scroll-bottom" id="scroll-btn"  data-element = "#footer">
                                 <button type="button" class="scroll-btn">scroll</button>
-                            </div>
-
-                            <div class="slider-intro__dots">
-                                <div class="slider-intro__dot active">01</div>
-                                <div class="slider-intro__dot">02</div>
-                                <div class="slider-intro__dot">03</div>
-                                <div class="slider-intro__dot">04</div>
                             </div>
                         </div>
                     </div>
@@ -396,6 +407,8 @@
     </div>
     
     <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> <!-- JQuery -->
+    <script type="text/javascript" src="js/slick.min.js"></script> <!-- Slick Slider -->
     <script src="js/script.js"></script>
 </body>
 </html>

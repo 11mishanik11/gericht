@@ -274,6 +274,9 @@
         justify-content: flex-end;
         margin: 0px 0px 40px 0px;
     }
+    .reservation__group>*:not(:last-child) {
+        margin-bottom: 20px;
+    }
     .reservation__input {
         flex-basis: 100%;
         margin: 0;
@@ -296,10 +299,6 @@
     .special-menu__btn {
         padding: 32px 0px 0px 0px;
     }
-    .footer__body {
-    }
-    /* Footer ---------------------------------------------------------------------*/
-
 }
 
 
@@ -312,7 +311,7 @@
     }
 
     /* Intro ----------------------------------------------------------------------*/
-    .slider-intro__dots {
+    .intro__wrapper .slick-dots {
         bottom: calc(10px + 66px);
         right: 5px;
     }
