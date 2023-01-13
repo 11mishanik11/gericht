@@ -40,11 +40,12 @@ $( window ).on( "load", function() {
 
         autoplay: true,
         autoplaySpeed: 5000,
+        swipe: false,
+        draggable: false,
 
         slidesToShow: 1,
         slidesToScroll: 1,
         touchThreshold: 15,
-        verticalSwiping: true,
 
         dots: true,
         appendDots: (".intro__wrapper")

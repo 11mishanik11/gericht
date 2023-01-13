@@ -407,7 +407,6 @@ body {
     color: #fff;
 
     transform: translate(-50%, -50%);
-    pointer-events: none;
 }
 .intro__scroll-bottom {
     position: absolute;
