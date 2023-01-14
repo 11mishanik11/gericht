@@ -81,19 +81,16 @@
     }
 
     /* Header ---------------------------------------------------------------------*/
+    .header.active {
+        color: #0C0B08;
+    }
     .header__body {
         justify-content: space-between;
     }
-    .active .header__logo {
-        position: relative;
-        z-index: 1;
-        color: #0C0B08;
-    }
+    .active .header__logo,
     .active .header__right {
         position: relative;
         z-index: 1;
-
-        color: #0C0B08;
     }
 
     /* Menu -----------------------------------------------------------------------*/
@@ -127,12 +124,6 @@
     .burger {
         display: block;
     }
-    .active .burger span,
-    .active .burger::before,
-    .active .burger::after {
-        background-color: #0C0B08;
-    }
-
     /* reservation ----------------------------------------------------------------*/
     .reservation {
         padding: 120px 0;
@@ -260,7 +251,18 @@
         margin: 0px 0px 20px 0px;
     }
 
+    /* Header ---------------------------------------------------------------------*/
+    .header__body {
+        padding: 20px 0;
+    }
+    .header__logo {
+        font-size: 35px;
+    }
+
     /* Intro ----------------------------------------------------------------------*/
+    .intro__body {
+        padding: 90px 0px 0px 0px;
+    }
     .intro__title {
         font-size: 110px;
     }
@@ -341,10 +343,13 @@
 
     /* Hashtags -------------------------------------------------------------------*/
     .hashtags {
-        bottom: 15px;
+        bottom: 5px;
         left: 0;
         transform: none;
     } 
+    .hashtags__item {
+        padding: 0 15px;
+    }
 
     /* Menu -----------------------------------------------------------------------*/
     .menu__mobile-item {

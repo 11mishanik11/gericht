@@ -1,28 +1,60 @@
-const burgerBtn = document.querySelector('#burger-btn');
-const header = document.querySelector('#header');
-const scrollBtn = document.querySelectorAll('#scroll-btn');
+let burgerBtn = document.querySelector('#burger-btn');
+let header = document.querySelector('#header');
+let scrollBtn = document.querySelectorAll('#scroll-btn');
 
-burgerBtn.onclick = burgerShow;
+// -------------------
+window.onscroll = headerFixed;
 
-function burgerShow() {
-    header.classList.toggle('active');
-    document.body.classList.toggle('hidden');
-}
+// -------------------
+burgerBtn.onclick = () => {
+    addClassHeader('active', true);
+};
 
+// -------------------
 for (let i = 0; i < scrollBtn.length; i++) {
     scrollBtn[i].onclick = scrollToBlock;
 }
 
+
+// Добавление класса в шапку
+function addClassHeader(className, hiddenBody = false) {
+    header.classList.toggle(className);
+
+    // Если второй аргумент "true"
+    if(hiddenBody) {
+        document.body.classList.toggle('hidden');
+    }
+}
+
+// Скролл до блока по нажатию
 function scrollToBlock(event) {
     event.preventDefault();
     let blockId = this.dataset.element;
     let blockElement = document.querySelector(blockId);
-    let blockScrollValue = blockElement.offsetTop;
+    let blockScrollValue = blockElement.offsetTop - header.offsetHeight;
+    header.classList.remove('active')
+    document.body.classList.remove('hidden')
     window.scrollTo({
         top: blockScrollValue,
         behavior: 'smooth'
-      });
+    });
 }
+
+// Fixed header
+function headerFixed() {
+    let scrollTopCount = window.scrollY;
+    let heightHeader = header.offsetHeight;
+
+    if(scrollTopCount >= heightHeader) {
+        header.classList.add('fixed');
+    } else {
+        header.classList.remove('fixed');
+    }
+}
+
+
+
+
 
 
 
